@@ -1,0 +1,16 @@
+version: '3'
+services:
+  esphome:
+    container_name: esphome
+    image: ghcr.io/esphome/esphome
+    volumes:
+      - ./config:/config
+      - /etc/localtime:/etc/localtime:ro
+    privileged: true
+    # network_mode: host
+    networks:
+      - esp
+    ports:
+      - 6052:6052
+networks:
+  esp:

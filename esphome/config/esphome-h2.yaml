@@ -1,0 +1,40 @@
+esphome:
+  name: esphome-h2
+  friendly_name: ESPHome H2
+
+esp32:
+  board: esp32dev
+  framework:
+    type: arduino
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: "yEnPfpUwOER6yqx42+IVm4WvRn1uO5lhUjUqKz/6OaE="
+
+ota:
+  password: "9ec80e59b030b13fa07f0db46d5d95ce"
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Esphome-H2 Fallback Hotspot"
+    password: "LwsqRM3Jjt2n"
+
+captive_portal:
+
+light:
+  - platform: binary
+    name: "Desk Lamp"
+    output: light_output
+
+output:
+  - id: light_output
+    platform: gpio
+    pin: GPIO2
