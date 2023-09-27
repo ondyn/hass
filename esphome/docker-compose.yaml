@@ -1,5 +1,11 @@
 version: '3'
 services:
+  # alpine:
+  #   image: alpine
+  #   networks:
+  #     - esp
+  #   command: "ping 192.168.1.1"
+
   esphome:
     container_name: esphome
     image: ghcr.io/esphome/esphome
@@ -8,9 +14,11 @@ services:
       - /etc/localtime:/etc/localtime:ro
     privileged: true
     # network_mode: host
+    # network_mode: bridge
     networks:
       - esp
     ports:
       - 6052:6052
 networks:
   esp:
+    driver: bridge

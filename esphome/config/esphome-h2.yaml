@@ -7,8 +7,12 @@ esp32:
   framework:
     type: arduino
 
+external_components:
+  - source: github://Fabian-Schmidt/esphome-truma_inetbox
+
 # Enable logging
 logger:
+  level: DEBUG
 
 # Enable Home Assistant API
 api:
@@ -22,6 +26,11 @@ wifi:
   ssid: !secret wifi_ssid
   password: !secret wifi_password
 
+  manual_ip:
+    static_ip: 192.168.153.7
+    gateway: 192.168.153.56
+    subnet: 255.255.255.0
+
   # Enable fallback hotspot (captive portal) in case wifi connection fails
   ap:
     ssid: "Esphome-H2 Fallback Hotspot"
@@ -30,11 +39,67 @@ wifi:
 captive_portal:
 
 light:
-  - platform: binary
-    name: "Desk Lamp"
-    output: light_output
+  platform: binary
+  name: "Desk Lamp"
+  output: light_output
 
 output:
-  - id: light_output
-    platform: gpio
-    pin: GPIO2
+  id: light_output
+  platform: gpio
+  pin: GPIO2
+
+dallas:
+  pin:
+    number: GPIO23
+
+sensor:
+  - platform: dallas
+    address: 0x8b3c01f095401e28
+    name: "Outside Temperature"
+  - platform: dallas
+    address: 0xa83c01f095b01928
+    name: "Inside Temperature"
+  - platform: dallas
+    address: 0xdb3c01f0952a3328
+    name: "Frost Valve Temperature"
+  - platform: truma_inetbox
+    name: "Current Room Temperature"
+    type: CURRENT_ROOM_TEMPERATURE
+  - platform: truma_inetbox
+    name: "Current Water Temperature"
+    type: CURRENT_WATER_TEMPERATURE
+    
+
+# truma
+uart:
+  - id: lin_uart_bus
+    tx_pin: 17
+    rx_pin: 16
+    baud_rate: 9600
+    data_bits: 8
+    parity: NONE
+    stop_bits: 2
+
+truma_inetbox:
+  uart_id: lin_uart_bus
+
+climate:
+  - platform: truma_inetbox
+    name: "Room"
+    type: ROOM
+  - platform: truma_inetbox
+    name: "Water"
+    type: WATER
+
+binary_sensor:
+  - platform: truma_inetbox
+    name: "CP Plus alive"
+    type: CP_PLUS_CONNECTED
+  - platform: truma_inetbox
+    name: "Heater has error"
+    type: HEATER_HAS_ERROR
+
+select:
+  - platform: truma_inetbox
+    name: "Fan Mode"
+    type: HEATER_FAN_MODE_COMBI

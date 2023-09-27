@@ -1,1 +1,4 @@
 /.DS_Store
+/esphome/config/.esphome
+/esphome/config/secrets.yaml
+.DS_Store
