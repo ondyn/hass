@@ -1,0 +1,3 @@
+#!/data/data/com.termux/files/usr/bin/sh
+termux-wake-lock
+sudo ./tailscaled -tun userspace-networking -statedir ~/.local/share/tailscale/tailscaled.state -socket $'($env.PREFIX)/var/run/tailscale/tailscaled.sock'

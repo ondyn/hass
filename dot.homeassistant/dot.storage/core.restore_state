@@ -1,0 +1,217 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "core.restore_state",
+  "data": [
+    {
+      "state": {
+        "entity_id": "person.ondyn",
+        "state": "home",
+        "attributes": {
+          "editable": true,
+          "id": "ondyn",
+          "latitude": 50.0257563,
+          "longitude": 14.5117749,
+          "gps_accuracy": 13,
+          "source": "device_tracker.m2011k2g",
+          "user_id": "0167ce1ee3af4374b4f4b7cd72ce3da0",
+          "device_trackers": [
+            "device_tracker.sm_g970f",
+            "device_tracker.m2011k2g"
+          ],
+          "friendly_name": "ondyn"
+        },
+        "last_changed": "2023-10-09T19:08:33.543531+00:00",
+        "last_updated": "2023-10-09T19:27:24.469179+00:00",
+        "context": {
+          "id": "01HCAYH3SN4C0D5XZB56G9BKC7",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-10-10T06:38:36.788061+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.sm_g970f_battery_level",
+        "state": "79",
+        "attributes": {
+          "unit_of_measurement": "%",
+          "device_class": "battery",
+          "icon": "mdi:battery-70",
+          "friendly_name": "SM-G970F Battery level"
+        },
+        "last_changed": "2023-10-10T06:32:29.795666+00:00",
+        "last_updated": "2023-10-10T06:32:29.795666+00:00",
+        "context": {
+          "id": "01HCC4JXV34J0RF3T0NAWHRCRZ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": 79,
+        "native_unit_of_measurement": "%"
+      },
+      "last_seen": "2023-10-10T06:38:36.788061+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.sm_g970f_battery_state",
+        "state": "discharging",
+        "attributes": {
+          "icon": "mdi:battery-minus",
+          "friendly_name": "SM-G970F Battery state"
+        },
+        "last_changed": "2023-10-10T06:28:33.027193+00:00",
+        "last_updated": "2023-10-10T06:28:33.027193+00:00",
+        "context": {
+          "id": "01HCC4BPM3BWWY13SSHQQPA540",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "discharging",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-10-10T06:38:36.788061+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.sm_g970f_charger_type",
+        "state": "none",
+        "attributes": {
+          "icon": "mdi:battery",
+          "friendly_name": "SM-G970F Charger type"
+        },
+        "last_changed": "2023-10-10T06:28:33.027449+00:00",
+        "last_updated": "2023-10-10T06:28:33.027449+00:00",
+        "context": {
+          "id": "01HCC4BPM3NF70TDJ0CT0FHF5E",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "none",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-10-10T06:38:36.788061+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.m2011k2g_battery_level",
+        "state": "100",
+        "attributes": {
+          "unit_of_measurement": "%",
+          "device_class": "battery",
+          "icon": "mdi:battery",
+          "friendly_name": "M2011K2G Battery level"
+        },
+        "last_changed": "2023-10-10T05:05:47.071094+00:00",
+        "last_updated": "2023-10-10T05:05:47.071094+00:00",
+        "context": {
+          "id": "01HCBZM51Z05NG765DM0V1EM5Z",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": 100,
+        "native_unit_of_measurement": "%"
+      },
+      "last_seen": "2023-10-10T06:38:36.788061+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.m2011k2g_battery_state",
+        "state": "discharging",
+        "attributes": {
+          "icon": "mdi:battery-minus",
+          "friendly_name": "M2011K2G Battery state"
+        },
+        "last_changed": "2023-10-09T19:08:36.628273+00:00",
+        "last_updated": "2023-10-09T19:08:36.628273+00:00",
+        "context": {
+          "id": "01HCAXEPCM6AP3P31YV2KK2JG6",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "discharging",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-10-10T06:38:36.788061+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.m2011k2g_charger_type",
+        "state": "none",
+        "attributes": {
+          "icon": "mdi:battery",
+          "friendly_name": "M2011K2G Charger type"
+        },
+        "last_changed": "2023-10-09T19:08:36.628477+00:00",
+        "last_updated": "2023-10-09T19:08:36.628477+00:00",
+        "context": {
+          "id": "01HCAXEPCMJW87SZ8J3KT40A73",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "none",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-10-10T06:38:36.788061+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "device_tracker.sm_g970f",
+        "state": "unknown",
+        "attributes": {
+          "source_type": "gps",
+          "friendly_name": "SM-G970F"
+        },
+        "last_changed": "2023-10-09T19:08:36.654765+00:00",
+        "last_updated": "2023-10-09T19:08:36.654765+00:00",
+        "context": {
+          "id": "01HCAXEPDE5GKJKDZ09H36F403",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-10-10T06:38:36.788061+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "device_tracker.m2011k2g",
+        "state": "home",
+        "attributes": {
+          "source_type": "gps",
+          "latitude": 50.0257563,
+          "longitude": 14.5117749,
+          "gps_accuracy": 13,
+          "altitude": 380,
+          "course": 0,
+          "speed": 0,
+          "vertical_accuracy": 1,
+          "friendly_name": "M2011K2G"
+        },
+        "last_changed": "2023-10-09T19:27:24.464322+00:00",
+        "last_updated": "2023-10-09T19:27:24.464322+00:00",
+        "context": {
+          "id": "01HCAYH3SGHYEWTESHSQKEBPSX",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-10-10T06:38:36.788061+00:00"
+    }
+  ]
+}

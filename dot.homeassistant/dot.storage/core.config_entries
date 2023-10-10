@@ -1,0 +1,118 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "core.config_entries",
+  "data": {
+    "entries": [
+      {
+        "entry_id": "34b44102fce4b35403cf41dacee3aba3",
+        "version": 1,
+        "domain": "shopping_list",
+        "title": "Shopping list",
+        "data": {},
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "onboarding",
+        "unique_id": "shopping_list",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "1b040cf745c8f8a52604fd1d81d55dca",
+        "version": 1,
+        "domain": "sun",
+        "title": "Sun",
+        "data": {},
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "import",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "39bb02abde1417f5f7a5efb2f474bb1c",
+        "version": 1,
+        "domain": "esphome",
+        "title": "ESPHome H2",
+        "data": {
+          "host": "192.168.48.7",
+          "port": 6053,
+          "password": "",
+          "noise_psk": "yEnPfpUwOER6yqx42+IVm4WvRn1uO5lhUjUqKz/6OaE=",
+          "device_name": "esphome-h2"
+        },
+        "options": {
+          "allow_service_calls": true
+        },
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": "8c:aa:b5:86:46:50",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "9f799b4a94a44587584f205237eb34c5",
+        "version": 1,
+        "domain": "mobile_app",
+        "title": "SM-G970F",
+        "data": {
+          "app_id": "io.homeassistant.companion.android",
+          "app_name": "Home Assistant",
+          "app_version": "2023.9.2-full (11226)",
+          "device_name": "SM-G970F",
+          "manufacturer": "samsung",
+          "model": "SM-G970F",
+          "os_name": "Android",
+          "os_version": "33",
+          "supports_encryption": false,
+          "app_data": {
+            "push_websocket_channel": true,
+            "push_url": "https://mobile-apps.home-assistant.io/api/sendPush/android/v1",
+            "push_token": "en92XDpNTsq2KOeM3j7Hs6:APA91bGzpFmOOcpg6fDt8RyoUGMLiYaE5V3LXf0XXtvEvJCmPrqjq0HKixHVhwRggkHwOC9VDThN8Zs1u7CArXh4DBqBYPk1ClzuGMvOId6NG2TSPsTodqQ5mA1TcurVGGj9Ua9FFEdx"
+          },
+          "device_id": "44897f9f3328c1d0",
+          "webhook_id": "1d60c036712bf58078c8aaed9d70ddad091d2f0407e2a15ba0e1e45221f4d591",
+          "user_id": "0167ce1ee3af4374b4f4b7cd72ce3da0"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "registration",
+        "unique_id": "io.homeassistant.companion.android-44897f9f3328c1d0",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "82dc208880ef8ea6f21d5e52a8000316",
+        "version": 1,
+        "domain": "mobile_app",
+        "title": "M2011K2G",
+        "data": {
+          "app_id": "io.homeassistant.companion.android",
+          "app_name": "Home Assistant",
+          "app_version": "2023.9.2-full (11226)",
+          "device_name": "M2011K2G",
+          "manufacturer": "Xiaomi",
+          "model": "M2011K2G",
+          "os_name": "Android",
+          "os_version": "33",
+          "supports_encryption": false,
+          "app_data": {
+            "push_websocket_channel": true,
+            "push_url": "https://mobile-apps.home-assistant.io/api/sendPush/android/v1",
+            "push_token": "fwzu9mKUQr-EOhYIYB_jI7:APA91bGLxjzNc-nsQn88BGXeovYpOskEm5iGpM8q1uVTVO5H3T0URqr9Wejk9Lu85q2Ho9UbOoY7SYA8tUC6cBjK-fQX43TBd_nc28a8eQlrr21QFHfxnbWFl2TjM7rp_WUGluJGX585"
+          },
+          "device_id": "483d3af2da5de759",
+          "webhook_id": "0f63093fe2b150025baa959ad0cd1974b2aacd158e543ed06844fc26140976fe",
+          "user_id": "0167ce1ee3af4374b4f4b7cd72ce3da0"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "registration",
+        "unique_id": "io.homeassistant.companion.android-483d3af2da5de759",
+        "disabled_by": null
+      }
+    ]
+  }
+}

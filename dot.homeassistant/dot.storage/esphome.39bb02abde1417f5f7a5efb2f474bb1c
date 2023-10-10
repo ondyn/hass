@@ -1,0 +1,228 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "esphome.39bb02abde1417f5f7a5efb2f474bb1c",
+  "data": {
+    "device_info": {
+      "uses_password": false,
+      "name": "esphome-h2",
+      "friendly_name": "ESPHome H2",
+      "mac_address": "8C:AA:B5:86:46:50",
+      "compilation_time": "Oct  5 2023, 23:08:04",
+      "model": "esp32dev",
+      "manufacturer": "Espressif",
+      "has_deep_sleep": false,
+      "esphome_version": "2023.8.2",
+      "project_name": "",
+      "project_version": "",
+      "webserver_port": 0,
+      "voice_assistant_version": 0,
+      "legacy_bluetooth_proxy_version": 0,
+      "bluetooth_proxy_feature_flags": 0
+    },
+    "services": [],
+    "api_version": {
+      "major": 1,
+      "minor": 9
+    },
+    "sensor": [
+      {
+        "object_id": "outside_temperature",
+        "key": 2259435129,
+        "name": "Outside Temperature",
+        "unique_id": "dallas-8b3c01f095401e28",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "device_class": "temperature",
+        "unit_of_measurement": "°C",
+        "accuracy_decimals": 1,
+        "force_update": false,
+        "state_class": 1,
+        "last_reset_type": 0
+      },
+      {
+        "object_id": "inside_temperature",
+        "key": 920924750,
+        "name": "Inside Temperature",
+        "unique_id": "dallas-a83c01f095b01928",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "device_class": "temperature",
+        "unit_of_measurement": "°C",
+        "accuracy_decimals": 1,
+        "force_update": false,
+        "state_class": 1,
+        "last_reset_type": 0
+      },
+      {
+        "object_id": "frost_valve_temperature",
+        "key": 3968931301,
+        "name": "Frost Valve Temperature",
+        "unique_id": "dallas-db3c01f0952a3328",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "device_class": "temperature",
+        "unit_of_measurement": "°C",
+        "accuracy_decimals": 1,
+        "force_update": false,
+        "state_class": 1,
+        "last_reset_type": 0
+      },
+      {
+        "object_id": "current_room_temperature",
+        "key": 1736655121,
+        "name": "Current Room Temperature",
+        "unique_id": "esphome-h2sensorcurrent_room_temperature",
+        "disabled_by_default": false,
+        "icon": "mdi:thermometer",
+        "entity_category": 0,
+        "device_class": "temperature",
+        "unit_of_measurement": "°C",
+        "accuracy_decimals": 1,
+        "force_update": false,
+        "state_class": 1,
+        "last_reset_type": 0
+      },
+      {
+        "object_id": "current_water_temperature",
+        "key": 3849819447,
+        "name": "Current Water Temperature",
+        "unique_id": "esphome-h2sensorcurrent_water_temperature",
+        "disabled_by_default": false,
+        "icon": "mdi:thermometer",
+        "entity_category": 0,
+        "device_class": "temperature",
+        "unit_of_measurement": "°C",
+        "accuracy_decimals": 0,
+        "force_update": false,
+        "state_class": 1,
+        "last_reset_type": 0
+      }
+    ],
+    "text_sensor": [],
+    "climate": [
+      {
+        "object_id": "room",
+        "key": 2077253480,
+        "name": "Room",
+        "unique_id": "esphome-h2climateroom",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "supports_current_temperature": true,
+        "supports_two_point_target_temperature": false,
+        "supported_modes": [
+          0,
+          3
+        ],
+        "visual_min_temperature": 5.0,
+        "visual_max_temperature": 30.0,
+        "visual_target_temperature_step": 1.0,
+        "visual_current_temperature_step": 1.0,
+        "legacy_supports_away": false,
+        "supports_action": false,
+        "supported_fan_modes": [
+          1,
+          3,
+          4,
+          5
+        ],
+        "supported_swing_modes": [],
+        "supported_custom_fan_modes": [],
+        "supported_presets": [],
+        "supported_custom_presets": []
+      },
+      {
+        "object_id": "water",
+        "key": 2654748154,
+        "name": "Water",
+        "unique_id": "esphome-h2climatewater",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "supports_current_temperature": true,
+        "supports_two_point_target_temperature": false,
+        "supported_modes": [
+          0,
+          3
+        ],
+        "visual_min_temperature": 40.0,
+        "visual_max_temperature": 80.0,
+        "visual_target_temperature_step": 20.0,
+        "visual_current_temperature_step": 20.0,
+        "legacy_supports_away": false,
+        "supports_action": false,
+        "supported_fan_modes": [],
+        "supported_swing_modes": [],
+        "supported_custom_fan_modes": [],
+        "supported_presets": [],
+        "supported_custom_presets": []
+      }
+    ],
+    "select": [
+      {
+        "object_id": "fan_mode",
+        "key": 85729246,
+        "name": "Fan Mode",
+        "unique_id": "esphome-h2selectfan_mode",
+        "disabled_by_default": false,
+        "icon": "mdi:thermometer",
+        "entity_category": 0,
+        "options": [
+          "Off",
+          "Eco",
+          "High",
+          "Boost"
+        ]
+      }
+    ],
+    "binary_sensor": [
+      {
+        "object_id": "cp_plus_alive",
+        "key": 769531817,
+        "name": "CP Plus alive",
+        "unique_id": "esphome-h2binary_sensorcp_plus_alive",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "device_class": "",
+        "is_status_binary_sensor": false
+      },
+      {
+        "object_id": "heater_has_error",
+        "key": 3260184388,
+        "name": "Heater has error",
+        "unique_id": "esphome-h2binary_sensorheater_has_error",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "device_class": "",
+        "is_status_binary_sensor": false
+      }
+    ],
+    "light": [
+      {
+        "object_id": "desk_lamp",
+        "key": 4123499495,
+        "name": "Desk Lamp",
+        "unique_id": "esphome-h2lightdesk_lamp",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "supported_color_modes": [
+          1
+        ],
+        "min_mireds": 0.0,
+        "max_mireds": 0.0,
+        "effects": [],
+        "legacy_supports_brightness": false,
+        "legacy_supports_rgb": false,
+        "legacy_supports_white_value": false,
+        "legacy_supports_color_temperature": false
+      }
+    ]
+  }
+}

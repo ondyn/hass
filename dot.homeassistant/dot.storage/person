@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "minor_version": 1,
+  "key": "person",
+  "data": {
+    "items": [
+      {
+        "id": "ondyn",
+        "name": "ondyn",
+        "user_id": "0167ce1ee3af4374b4f4b7cd72ce3da0",
+        "device_trackers": [
+          "device_tracker.sm_g970f",
+          "device_tracker.m2011k2g"
+        ]
+      }
+    ]
+  }
+}

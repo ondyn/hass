@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace",
+  "data": {
+    "config": {
+      "title": "Domov",
+      "views": [
+        {
+          "path": "default_view",
+          "title": "Home",
+          "cards": [
+            {
+              "type": "entities",
+              "entities": [
+                "person.ondyn"
+              ]
+            },
+            {
+              "type": "grid",
+              "square": false,
+              "columns": 1,
+              "cards": [
+                {
+                  "type": "entities",
+                  "entities": [
+                    {
+                      "entity": "light.esphome_h2_desk_lamp",
+                      "name": "Desk Lamp"
+                    },
+                    {
+                      "entity": "select.esphome_h2_fan_mode",
+                      "name": "Fan Mode"
+                    },
+                    {
+                      "entity": "binary_sensor.esphome_h2_cp_plus_alive",
+                      "name": "CP Plus alive"
+                    },
+                    {
+                      "entity": "sensor.esphome_h2_current_room_temperature",
+                      "name": "Current Room Temperature"
+                    },
+                    {
+                      "entity": "sensor.esphome_h2_current_water_temperature",
+                      "name": "Current Water Temperature"
+                    },
+                    {
+                      "entity": "sensor.esphome_h2_frost_valve_temperature",
+                      "name": "Frost Valve Temperature"
+                    },
+                    {
+                      "entity": "binary_sensor.esphome_h2_heater_has_error",
+                      "name": "Heater has error"
+                    },
+                    {
+                      "entity": "sensor.esphome_h2_inside_temperature",
+                      "name": "Inside Temperature"
+                    },
+                    {
+                      "entity": "sensor.esphome_h2_outside_temperature",
+                      "name": "Outside Temperature"
+                    }
+                  ],
+                  "title": "ESPHome H2"
+                },
+                {
+                  "type": "thermostat",
+                  "entity": "climate.esphome_h2_room"
+                },
+                {
+                  "type": "thermostat",
+                  "entity": "climate.esphome_h2_water"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
