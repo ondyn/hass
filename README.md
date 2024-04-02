@@ -19,6 +19,7 @@ adb pull /data/app/com.example.someapp-2.apk path/to/desired/destination
 adb install-multiple base.apk split_config.arm64_v8a.apk split_config.cs.apk split_config.xxhdpi.apk 
 ```
 
+# From: https://github.com/talss89/termux-home-assistant-installer
 # termux-home-assistant-installer
 
 A script to provision Home Assistant Core on an Android / Termux device. This is not officially supported.

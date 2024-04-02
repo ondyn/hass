@@ -2,3 +2,4 @@
 /esphome/config/.esphome
 /esphome/config/secrets.yaml
 .DS_Store
+deb_packages
