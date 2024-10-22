@@ -21,7 +21,7 @@ cleanup() {
 
 setup_colors
 
-msg "$ORANGE This will install Home Assistant Core 2023.4.4 in your $HOME/hass directory."
+msg "$ORANGE This will install Home Assistant Core in your $HOME/hass directory."
 msg "$NOFORMAT Please CTRL+C now to abort, otherwise waiting 5 seconds and installing..."
 
 sleep 1
@@ -44,5 +44,5 @@ msg "$GREEN Installing now... $NOFORMAT"
 sleep 1
 
 pkg i git
-git clone https://github.com/ondyn/termux-home-assistant-installer.git
-cd termux-home-assistant-installer && ./termux-home-assistant.sh install
+git clone https://github.com/ondyn/hass.git
+cd hass/scripts && ./install.sh

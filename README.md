@@ -31,7 +31,7 @@ A script to provision Home Assistant Core on an Android / Termux device. This is
 ## Quick Installer
 
 ```bash
-curl -sL https://github.com/ondyn/termux-home-assistant-installer/releases/download/1/remote-install.sh | bash
+curl -sL https://github.com/ondyn/hass/releases/download/0.0.1/remote-install.sh | bash
 ```
 
 Please be patient, this will take a while depending on your device specifications.
