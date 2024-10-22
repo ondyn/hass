@@ -72,4 +72,3 @@ I've tried this on ARM64 machines directly, but the best results are using the d
 Unfortunately it seems that checking out a commit isn't the only thing we need to do in some situations. Some other dependencies source archives become unavailable, so human input is required to build these dependencies at this stage. I'd have liked to have set up a CI job which handles this automatically, but at the moment this isn't possible.
 
 I will be giving some thought into dependency management and `contrib/` dpkgs.
-
